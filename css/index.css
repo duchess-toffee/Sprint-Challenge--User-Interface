@@ -66,15 +66,53 @@ p {
     line-height: 1.4;
 }
 
+/*Navigation*/
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 1.2em 0;
+}
+
+nav div{
+    display:flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+ul{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+}
+
+ul li{
+    font-family: "Roboto", sans-serif;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .03s;
+}
+
+ul li a:hover{
+    font-weight: bold;
+}
+
+/*Body*/
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/*Home - Picture & Text*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 400px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -85,6 +123,7 @@ p {
     padding-bottom: 20px;  
 }
 
+/*Home - Boxes*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -112,6 +151,84 @@ p {
     justify-content: center;
 }
 
+#box1{
+    background: teal;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#box2{
+    background: gold;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+#box3{
+    background: cadetblue;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#box4{
+    background: coral;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+#box5{
+    background: crimson;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#box6{
+    background: forestgreen;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+#box7{
+    background: darkorchid;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#box8{
+    background: hotpink;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+#box9{
+    background: indigo;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#box10{
+    background: dodgerblue;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes twinkle{
+    50%{
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+}
+
+/*Home - Bottom*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +243,129 @@ p {
     padding-right: 0;
 }
 
+/*About Page - Header*/
+#header-about-page{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px dashed black;
+}
+
+.about-page #header-about-page div{
+    width: 48em;
+}
+
+/*About Page - Content*/
+.content-container{
+    height: 70em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-about-page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.content-item{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 29em;
+    width: 23.2em;
+    border-bottom: 1px dashed black;
+}
+
+.learn-more{
+    border: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: .5em 1.5em;
+    transition: .03s;
+}
+.learn-more:hover{
+    background: black;
+    color: white;
+}
+
+.bottom-content-about-page{
+    width: 48em;
+}
+
+/*Contact*/
+.contact-page #header-contact-page{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px dashed black;
+}
+
+.contact-page #header-contact-page div{
+    width: 48em;
+}
+
+.contact-us{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 5em;
+    height: 50em;
+    text-align: center;
+}
+.contact-us div{
+    height: 7em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:40em;
+    border-top: 1px dashed black;
+}
+
+input, textarea{
+    width: 20em;
+    height: 3em;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    font-family:'Roboto', sans-serif;
+}
+
+textarea{
+    height: 10em;
+    font-family:'Roboto', sans-serif;
+}
+
+button{
+    border: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: .5em 1.5em;
+}
+
+button:hover{
+    background:black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*Footer*/
 footer {
     width: 100%;
     background: black;
@@ -143,4 +383,9 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    transition: .3s;
+}
+
+footer nav a:hover{
+    font-weight: bold;
 }
