@@ -93,6 +93,11 @@ ul li{
 ul li a{
     text-decoration: none;
     color: black;
+    transition: .03s;
+}
+
+ul li a:hover{
+    font-weight: bold;
 }
 
 /*Body*/
@@ -148,42 +153,79 @@ ul li a{
 
 #box1{
     background: teal;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 #box2{
     background: gold;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 
 #box3{
     background: cadetblue;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 #box4{
     background: coral;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 
 #box5{
     background: crimson;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 #box6{
     background: forestgreen;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 
 #box7{
     background: darkorchid;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 #box8{
     background: hotpink;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 
 #box9{
     background: indigo;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 #box10{
     background: dodgerblue;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes twinkle{
+    50%{
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
 }
 
 /*Home - Bottom*/
@@ -246,6 +288,11 @@ ul li a{
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     padding: .5em 1.5em;
+    transition: .03s;
+}
+.learn-more:hover{
+    background: black;
+    color: white;
 }
 
 .bottom-content-about-page{
@@ -311,6 +358,12 @@ button{
     padding: .5em 1.5em;
 }
 
+button:hover{
+    background:black;
+    color: white;
+    transition: 0.3s;
+}
+
 
 /*Footer*/
 footer {
@@ -330,4 +383,9 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    transition: .3s;
+}
+
+footer nav a:hover{
+    font-weight: bold;
 }
