@@ -252,6 +252,65 @@ ul li a{
     width: 48em;
 }
 
+/*Contact*/
+.contact-page #header-contact-page{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px dashed black;
+}
+
+.contact-page #header-contact-page div{
+    width: 48em;
+}
+
+.contact-us{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 5em;
+    height: 50em;
+    text-align: center;
+}
+.contact-us div{
+    height: 7em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:40em;
+    border-top: 1px dashed black;
+}
+
+input, textarea{
+    width: 20em;
+    height: 3em;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    font-family:'Roboto', sans-serif;
+}
+
+textarea{
+    height: 10em;
+    font-family:'Roboto', sans-serif;
+}
+
+button{
+    border: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: .5em 1.5em;
+}
+
 
 /*Footer*/
 footer {
