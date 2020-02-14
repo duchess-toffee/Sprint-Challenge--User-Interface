@@ -66,15 +66,48 @@ p {
     line-height: 1.4;
 }
 
+/*Navigation*/
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 1.2em 0;
+}
+
+nav div{
+    display:flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+ul{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+}
+
+ul li{
+    font-family: "Roboto", sans-serif;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Body*/
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/*Home - Picture & Text*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 400px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -85,6 +118,7 @@ p {
     padding-bottom: 20px;  
 }
 
+/*Home - Boxes*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
